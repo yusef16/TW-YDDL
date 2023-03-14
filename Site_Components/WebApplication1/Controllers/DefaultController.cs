@@ -13,5 +13,22 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+
+        public ActionResult blank()
+        {
+            return View();
+        }
+        public ActionResult checkout()
+        {
+            return View();
+        }
+        public ActionResult product()
+        {
+            return View();
+        }
+        public ActionResult store()
+        {
+            return View();
+        }
     }
 }
