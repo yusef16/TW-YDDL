@@ -105,6 +105,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\darkmode.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\mascot.css" />
     <Content Include="css\nouislider.min.css" />
@@ -129,6 +130,7 @@
     <Content Include="img\shop02.png" />
     <Content Include="img\shop03.png" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\darkmode.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.zoom.min.js" />
     <Content Include="js\main.js" />
