@@ -58,7 +58,6 @@ Table OF Contents
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -353,6 +352,92 @@ textarea.input {
 	right: 0px;
 }
 
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------*\*/
+
+.section_d {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #15161d;
+	color: white;
+}
+
+
+.section-title {
+	position: relative;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+	.section-title .title {
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 0px;
+	}
+
+	.section-title .section-nav {
+		float: right;
+	}
+
+		.section-title .section-nav .section-tab-nav {
+			display: inline-block;
+		}
+
+.section-tab-nav li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+	.section-tab-nav li:last-child {
+		margin-right: 0px;
+	}
+
+	.section-tab-nav li a {
+		font-weight: 700;
+		color: #8D99AE;
+	}
+
+		.section-tab-nav li a:after {
+			content: "";
+			display: block;
+			width: 0%;
+			height: 2px;
+			background-color: #D10024;
+			-webkit-transition: 0.2s all;
+			transition: 0.2s all;
+		}
+
+	.section-tab-nav li.active a {
+		color: #D10024;
+	}
+
+		.section-tab-nav li a:hover:after, .section-tab-nav li a:focus:after, .section-tab-nav li.active a:after {
+			width: 100%;
+		}
+
+.section-title .section-nav .products-slick-nav {
+	top: 0px;
+	right: 0px;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+#bgcolor {
+	background-color: red;
+}
+
+
 /*----------------------------*\
 	Breadcrumb
 \*----------------------------*/
@@ -625,10 +710,16 @@ textarea.input {
 	border-top: 3px solid #D10024;
 }
 
+.navigation_dark {
+	background: #1E1F29;
+	border-bottom: 2px solid #E4E7ED;
+	border-top: 3px solid #D10024;
+}
+
+
 /*----------------------------*\
 	Main nav
 \*----------------------------*/
-
 .main-nav > li + li {
 	margin-left: 30px
 }
@@ -1923,6 +2014,7 @@ textarea.input {
 ===========================================================*/
 
 #newsletter.section {
+	background-color: red;
 	border-top: 2px solid #E4E7ED;
 	border-bottom: 3px solid #D10024;
 	margin-top: 30px;
