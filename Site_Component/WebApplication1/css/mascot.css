@@ -8,7 +8,7 @@
      border-radius: 28px;
      position: fixed;
      bottom: 20px;
-     right: 30px;
+     left: 30px;
      opacity: 0;
      transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px) skew(35deg, -10deg);
      animation: tilt-in-fwd-br 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

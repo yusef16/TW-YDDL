@@ -430,3 +430,26 @@ C:\Users\Yusef\Desktop\semestrul 4\TW\lab1\TW-YDDL\Site_Component\WebApplication
 C:\Users\Yusef\Desktop\semestrul 4\TW\lab1\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Yusef\Desktop\semestrul 4\TW\lab1\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Yusef\Desktop\semestrul 4\TW\lab1\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\WebApplication1.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Admin\Desktop\TW-YDDL\Site_Component\WebApplication1\obj\Debug\WebApplication1.pdb
