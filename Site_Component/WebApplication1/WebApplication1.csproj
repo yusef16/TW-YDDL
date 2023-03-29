@@ -112,9 +112,11 @@
     <Content Include="css\slick-theme.css" />
     <Content Include="css\slick.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\login.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\slick.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\hd1.png" />
     <Content Include="img\hotdeal.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\product01.png" />
@@ -197,6 +199,8 @@
     <Content Include="Views\Default\checkout.cshtml" />
     <Content Include="Views\Default\product.cshtml" />
     <Content Include="Views\Default\store.cshtml" />
+    <Content Include="Views\Default\login.cshtml" />
+    <Content Include="Views\Default\hard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
