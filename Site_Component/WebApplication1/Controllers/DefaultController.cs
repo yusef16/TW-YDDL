@@ -30,5 +30,13 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-    }
+        public ActionResult login()
+        {
+               return View();
+        }
+        public ActionResult hard()
+        {
+               return View();
+        }
+     }
 }
