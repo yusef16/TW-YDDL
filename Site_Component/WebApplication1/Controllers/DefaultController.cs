@@ -38,5 +38,15 @@ namespace WebApplication1.Controllers
         {
                return View();
         }
+
+          public ActionResult RAM()
+          {
+               return View();
+          }
+
+          public ActionResult CPU()
+          {
+               return View();
+          }
      }
 }
