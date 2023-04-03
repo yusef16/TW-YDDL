@@ -1,0 +1,610 @@
+﻿
+@{
+     ViewBag.Title = "CPU";
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+
+
+<div id="darklight" class="section">
+     <!-- SECTION -->
+     <div class="section">
+          <!-- container -->
+          <div class="container">
+               <!-- row -->
+               <div class="row">
+                    <!-- ASIDE -->
+                    <div id="aside" class="col-md-3">
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Producător</h3>
+                              <div class="checkbox-filter">
+
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="category-1">
+                                        <label for="category-1">
+                                             <span></span>
+                                             Intel
+                                        </label>
+                                   </div>
+
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="category-2">
+                                        <label for="category-2">
+                                             <span></span>
+                                             AMD
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Price</h3>
+                              <div class="price-filter">
+                                   <div id="price-slider"></div>
+                                   <div class="input-number price-min">
+                                        <input id="price-min" type="number">
+                                        <span class="qty-up">+</span>
+                                        <span class="qty-down">-</span>
+                                   </div>
+                                   <span>-</span>
+                                   <div class="input-number price-max">
+                                        <input id="price-max" type="number">
+                                        <span class="qty-up">+</span>
+                                        <span class="qty-down">-</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Nr.Nuclee</h3>
+                              <div class="checkbox-filter">
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-1">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             4
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-2">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             6
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-3">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             8
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-4">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             10
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-5">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             12
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-6">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             14
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-7">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             16
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="Nr.Nuclee-8">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             32
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                         <!-- Viteza -->
+                         <div class="aside">
+                              <h3 class="aside-title">Tip memorie</h3>
+                              <div class="checkbox-filter">
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-1">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             DDR4
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-2">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR4, DDR5
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-3">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR4-2400
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-4">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR4-2666
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-5">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR4-2933
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-6">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR4-3200
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-7">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR5
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-8">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR5-4800
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="tip-9">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             DDR4-5600
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /Tip memorie -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Socket</h3>
+                              <div class="checkbox-filter">
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="socket-1">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             AM4
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="socket-2">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             AM5
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="socket-3">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             S1151
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="socket-4">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             S1200
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="socket-5">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             S1700
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /Socket -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Top selling</h3>
+                              <div class="product-widget">
+                                   <div class="product-img">
+                                        <img src="~/img/product01.png" alt="">
+                                   </div>
+                                   <div class="product-body">
+                                        <p class="product-category">Category</p>
+                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                   </div>
+                              </div>
+
+                              <div class="product-widget">
+                                   <div class="product-img">
+                                        <img src="~/img/product02.png" alt="">
+                                   </div>
+                                   <div class="product-body">
+                                        <p class="product-category">Category</p>
+                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                   </div>
+                              </div>
+
+                              <div class="product-widget">
+                                   <div class="product-img">
+                                        <img src="~/img/product03.png" alt="">
+                                   </div>
+                                   <div class="product-body">
+                                        <p class="product-category">Category</p>
+                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                    </div>
+                    <!-- /ASIDE -->
+                    <!-- STORE -->
+                    <div id="store" class="col-md-9">
+                         <!-- store top filter -->
+                         <div class="store-filter clearfix">
+                              <div class="store-sort">
+                                   <label>
+                                        Sort By:
+                                        <select class="input-select">
+                                             <option value="0">Popular</option>
+                                             <option value="1">Position</option>
+                                        </select>
+                                   </label>
+
+                                   <label>
+                                        Show:
+                                        <select class="input-select">
+                                             <option value="0">20</option>
+                                             <option value="1">50</option>
+                                        </select>
+                                   </label>
+                              </div>
+                              <ul class="store-grid">
+                                   <li class="active"><i class="fa fa-th"></i></li>
+                                   <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+                              </ul>
+                         </div>
+                         <!-- /store top filter -->
+                         <!-- store products -->
+                         <div class="row">
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-01.png" alt="">
+                                             <div class="product-label">
+                                             </div>
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor AMD Ryzen 7 3.8 GHz Tray, 8 nuclee, AM4, 3.80 GHz-4.70 GHz</a></h3>
+                                             <h4 class="product-price">$332.76 <del class="product-old-price">$357.11</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn">
+                                                  <i class="fa fa-shopping-cart"></i> @Html.ActionLink("add to card", "checkout")
+
+
+
+                                             </button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-02.png" alt="">
+                                             <div class="product-label">
+                                                  <span class="new">NEW</span>
+                                             </div>
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor Intel Core i3-10100F 3.60 GHz Box, 4 nuckee, S1200, DDR4</a></h3>
+                                             <h4 class="product-price">$110.88 <del class="product-old-price">$116.29</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star-o"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-03.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor Intel Core i5-12400F 2.50 GHz - 4.40 GHz Tray,DDR5,S1700</a></h3>
+                                             <h4 class="product-price">$221.81 <del class="product-old-price">$246.17</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-lg visible-md"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-04.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor AMD Ryzen 5 5600X 3.70 GHz - 4.60 GHz Tray, AM4, DDR4, 6 nuclee</a></h3>
+                                             <h4 class="product-price">$221.82 <del class="product-old-price">$235.35</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-05.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor Intel Core i7-12700K 3.60 GHz - 5.00 GHz Tray, 12 nuclee, S1700, DDR5</a></h3>
+                                             <h4 class="product-price">$522.16 <del class="product-old-price">$532.99</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-06.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor AMD Ryzen 9 5900X 3.50 GHz - 4.00 GHz Tray, 12 nuclee, DDR4, AM4</a></h3>
+                                             <h4 class="product-price">$511.34 <del class="product-old-price">$532.99</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star-o"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-07.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor Intel Core i5-12400 2.50 GHz - 4.40 GHz Tray, 6 nuclee, S1700</a></h3>
+                                             <h4 class="product-price">$246.17 <del class="product-old-price">$278.64</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-08.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor AMD Ryzen 9 5950X 3.40 GHz - 4.90 GHz Tray, 16 nuclee, DDR4, AM4</a></h3>
+                                             <h4 class="product-price">$722.39 <del class="product-old-price">$754.86</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/CPU-09.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Procesor AMD Ryzen 5 3600 3.60 GHz - 4.20 GHz Retail, DDR4, AM4, 6 nuclee</a></h3>
+                                             <h4 class="product-price">$138.48 <del class="product-old-price">$149.85</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                         </div>
+                         <!-- /store products -->
+                    </div>
+                    <!-- /STORE -->
+               </div>
+               <!-- /row -->
+          </div>
+          <!-- /container -->
+     </div>
+     <!-- /SECTION -->
+     <!-- NEWSLETTER -->
+     <div id="newsletter" class="section">
+          <!-- container -->
+          <div class="container">
+               <!-- row -->
+               <div class="row">
+                    <div class="col-md-12">
+                         <div class="newsletter">
+                              <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+                              <form>
+                                   <input class="input" type="email" placeholder="Enter Your Email">
+                                   <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                              </form>
+                              <ul class="newsletter-follow">
+                                   <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                   </li>
+                                   <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                   </li>
+                                   <li>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                   </li>
+                                   <li>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <!-- /row -->
+          </div>
+          <!-- /container -->
+     </div>
+     <!-- /NEWSLETTER -->
+</div>
