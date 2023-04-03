@@ -48,5 +48,17 @@ namespace WebApplication1.Controllers
           {
                return View();
           }
-     }
+
+        public ActionResult Video_card()
+        {
+            return View();
+        }
+
+
+        public ActionResult Categorii()
+        {
+            return View();
+        }
+
+    }
 }

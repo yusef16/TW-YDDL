@@ -113,6 +113,7 @@
     <Content Include="css\slick.css" />
     <Content Include="css\style.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\StyleSheet1.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\slick.svg" />
     <Content Include="Global.asax" />
@@ -125,6 +126,12 @@
     <Content Include="img\CPU-07.png" />
     <Content Include="img\CPU-08.png" />
     <Content Include="img\CPU-09.png" />
+    <Content Include="img\c_coolere.png" />
+    <Content Include="img\c_hdd.png" />
+    <Content Include="img\c_pacidebaza.png" />
+    <Content Include="img\c_placivideo.png" />
+    <Content Include="img\c_procesoare.png" />
+    <Content Include="img\c_ram.png" />
     <Content Include="img\hd1.png" />
     <Content Include="img\hotdeal.png" />
     <Content Include="img\logo.png" />
@@ -149,6 +156,15 @@
     <Content Include="img\shop01.png" />
     <Content Include="img\shop02.png" />
     <Content Include="img\shop03.png" />
+    <Content Include="img\v_1.png" />
+    <Content Include="img\v_2.png" />
+    <Content Include="img\v_3.png" />
+    <Content Include="img\v_4.png" />
+    <Content Include="img\v_5.png" />
+    <Content Include="img\v_6.png" />
+    <Content Include="img\v_7.png" />
+    <Content Include="img\v_8.png" />
+    <Content Include="img\v_9.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\darkmode.js" />
     <Content Include="js\jquery.min.js" />
@@ -221,6 +237,8 @@
     <Content Include="Views\Default\hard.cshtml" />
     <Content Include="Views\Default\RAM.cshtml" />
     <Content Include="Views\Default\CPU.cshtml" />
+    <Content Include="Views\Default\Video_card.cshtml" />
+    <Content Include="Views\Default\Categorii.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
