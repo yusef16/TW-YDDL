@@ -1,0 +1,1041 @@
+﻿
+@{
+    ViewBag.Title = "Placidebaza";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+
+
+<div id="darklight" class="section">
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- ASIDE -->
+                <div id="aside" class="col-md-3">
+                    <!-- aside Widget -->
+                    <div class="aside">
+                        <h3 class="aside-title">Tip memorie</h3>
+                        <div class="checkbox-filter">
+
+
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="category-1">
+                                <label for="category-1">
+                                    <span></span>
+                                    DDR5
+                                </label>
+                            </div>
+
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="category-2">
+                                <label for="category-2">
+                                    <span></span>
+                                    DDR4
+                                </label>
+                            </div>
+
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="category-3">
+                                <label for="category-3">
+                                    <span></span>
+                                    DDR3
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /aside Widget -->
+                    <!-- aside Widget -->
+                    <div class="aside">
+                        <h3 class="aside-title">Price</h3>
+                        <div class="price-filter">
+                            <div id="price-slider"></div>
+                            <div class="input-number price-min">
+                                <input id="price-min" type="number">
+                                <span class="qty-up">+</span>
+                                <span class="qty-down">-</span>
+                            </div>
+                            <span>-</span>
+                            <div class="input-number price-max">
+                                <input id="price-max" type="number">
+                                <span class="qty-up">+</span>
+                                <span class="qty-down">-</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /aside Widget -->
+                    <!-- aside Widget -->
+                    <div class="aside">
+                        <h3 class="aside-title">Brand</h3>
+                        <div class="checkbox-filter">
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="brand-1">
+                                <label for="brand-1">
+                                    <span></span>
+                                    Gigabyte
+                                </label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="brand-2">
+                                <label for="brand-2">
+                                    <span></span>
+                                    Asus
+                                </label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="brand-3">
+                                <label for="brand-3">
+                                    <span></span>
+                                    ASRock
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /aside Widget -->
+                    <!-- Chipset -->
+                    <div class="aside">
+                        <h3 class="aside-title">Chipset</h3>
+                        <div class="checkbox-filter">
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="speed-1">
+                                <label for="brand-1">
+                                    <span></span>
+                                    Intel
+                                </label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="speed-2">
+                                <label for="brand-2">
+                                    <span></span>
+                                    AMD
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Slot -->
+                    <!-- aside Widget -->
+                    <div class="aside">
+                        <h3 class="aside-title">Slot PCI</h3>
+                        <div class="checkbox-filter">
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="slot-1">
+                                <label for="brand-1">
+                                    <span></span>
+                                    PCI-Express
+                                </label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="slot-2">
+                                <label for="brand-2">
+                                    <span></span>
+                                    PCI-Express 2.0
+                                </label>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="slot-3">
+                                <label for="brand-1">
+                                    <span></span>
+                                    PCI-Express 3.0
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- aside Widget -->
+                    <div class="aside">
+                        <h3 class="aside-title">Top selling</h3>
+                        <div class="product-widget">
+                            <div class="product-img">
+                                <img src="~/img/product01.png" alt="">
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                            </div>
+                        </div>
+
+                        <div class="product-widget">
+                            <div class="product-img">
+                                <img src="~/img/product02.png" alt="">
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                            </div>
+                        </div>
+
+                        <div class="product-widget">
+                            <div class="product-img">
+                                <img src="~/img/product03.png" alt="">
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /aside Widget -->
+                </div>
+                <!-- /ASIDE -->
+                <!-- STORE -->
+                <div id="store" class="col-md-9">
+                    <!-- store top filter -->
+                    <div class="store-filter clearfix">
+                        <div class="store-sort">
+                            <label>
+                                Sort By:
+                                <select class="input-select">
+                                    <option value="0">Popular</option>
+                                    <option value="1">Position</option>
+                                </select>
+                            </label>
+
+                            <label>
+                                Show:
+                                <select class="input-select">
+                                    <option value="0">20</option>
+                                    <option value="1">50</option>
+                                </select>
+                            </label>
+                        </div>
+                        <ul class="store-grid">
+                            <li class="active"><i class="fa fa-th"></i></li>
+                            <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /store top filter -->
+                    <!-- store products -->
+                    <div class="row">
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb1.png" alt="">
+                                    <div class="product-label">
+                                    </div>
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placa de baza Gigabyte B450 AORUS ELITE V2, Socket AM4</a></h3>
+                                    <h4 class="product-price">$25.75 <del class="product-old-price">$33.50</del></h4>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn">
+                                        <i class="fa fa-shopping-cart"></i> @Html.ActionLink("add to card", "checkout")
+
+
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb2.png" alt="">
+                                    <div class="product-label">
+                                        <span class="new">NEW</span>
+                                    </div>
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placa de baza ASUS PRIME B560M-A, Socket 1200</a></h3>
+                                    <h4 class="product-price">$29.15 <del class="product-old-price">$39.49</del></h4>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+
+                        <div class="clearfix visible-sm visible-xs"></div>
+
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb3.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placa de baza Gigabyte Z790 UD AX DDR5, Socket LGA 1700</a></h3>
+                                    <h4 class="product-price">$66.97 <del class="product-old-price">$70.87</del></h4>
+                                    <div class="product-rating">
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+
+                        <div class="clearfix visible-lg visible-md"></div>
+
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb4.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placa de baza GIGABYTE Z790 GAMING X AX</a></h3>
+                                    <h4 class="product-price">$61.36 <del class="product-old-price">$77.64</del></h4>
+                                    <div class="product-rating">
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+
+                        <div class="clearfix visible-sm visible-xs"></div>
+
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb5.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placă de bază ASRock B650 LIVEMIXER</a></h3>
+                                    <h4 class="product-price">$220.35 <del class="product-old-price">$297.45</del></h4>
+                                    <div class="product-rating">
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb6.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placă de bază ASRock B650E PG RIPTIDE WIFI</a></h3>
+                                    <h4 class="product-price">$146.60 <del class="product-old-price">$185.90</del></h4>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+
+                        <div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb7.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#"> Placă de bază Asus PRIME H610M-D D4</a></h3>
+                                    <h4 class="product-price">$85.94 <del class="product-old-price">$106.53</del></h4>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb8.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placă de bază ASUS ROG STRIX B550-F</a></h3>
+                                    <h4 class="product-price">$151.36 <del class="product-old-price">$182.64</del></h4>
+                                    <div class="product-rating">
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+
+                        <div class="clearfix visible-sm visible-xs"></div>
+
+                        <!-- product -->
+                        <div class="col-md-4 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="~/img/pb9.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Category</p>
+                                    <h3 class="product-name"><a href="#">Placă de bază Gigabyte B650E AORUS MASTER</a></h3>
+                                    <h4 class="product-price">$156.68 <del class="product-old-price">$181.22</del></h4>
+                                    <div class="product-rating">
+                                    </div>
+                                    <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                    </div>
+                    <!-- /store products -->
+                </div>
+                <!-- /STORE -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+                        <form>
+                            <input class="input" type="email" placeholder="Enter Your Email">
+                            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="newsletter-follow">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+</div>
+@{
+     ViewBag.Title = "placidebaza";
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+
+
+<div id="darklight" class="section">
+     <!-- SECTION -->
+     <div class="section">
+          <!-- container -->
+          <div class="container">
+               <!-- row -->
+               <div class="row">
+                    <!-- ASIDE -->
+                    <div id="aside" class="col-md-3">
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Tip memorie</h3>
+                              <div class="checkbox-filter">
+
+
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="category-1">
+                                        <label for="category-1">
+                                             <span></span>
+                                             DDR5
+                                        </label>
+                                   </div>
+
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="category-2">
+                                        <label for="category-2">
+                                             <span></span>
+                                             DDR4
+                                        </label>
+                                   </div>
+
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="category-3">
+                                        <label for="category-3">
+                                             <span></span>
+                                             DDR3
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Price</h3>
+                              <div class="price-filter">
+                                   <div id="price-slider"></div>
+                                   <div class="input-number price-min">
+                                        <input id="price-min" type="number">
+                                        <span class="qty-up">+</span>
+                                        <span class="qty-down">-</span>
+                                   </div>
+                                   <span>-</span>
+                                   <div class="input-number price-max">
+                                        <input id="price-max" type="number">
+                                        <span class="qty-up">+</span>
+                                        <span class="qty-down">-</span>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Brand</h3>
+                              <div class="checkbox-filter">
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="brand-1">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             Gigabyte
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="brand-2">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             Asus
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="brand-3">
+                                        <label for="brand-3">
+                                             <span></span>
+                                             ASRock
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                         <!-- Chipset -->
+                         <div class="aside">
+                              <h3 class="aside-title">Chipset</h3>
+                              <div class="checkbox-filter">
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="speed-1">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             Intel
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="speed-2">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             AMD
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /Slot -->
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Slot PCI</h3>
+                              <div class="checkbox-filter">
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="slot-1">
+                                        <label for="brand-1">
+                                             <span></span>
+                                             PCI-Express
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="slot-2">
+                                        <label for="brand-2">
+                                             <span></span>
+                                             PCI-Express 2.0
+                                        </label>
+                                   </div>
+                                   <div class="input-checkbox">
+                                        <input type="checkbox" id="slot-3">
+                                        <label for="brand-1">
+                                            <span></span>
+                                            PCI-Express 3.0
+                                        </label>
+                                   </div>
+                              </div>
+                         </div>
+                       
+                         <!-- aside Widget -->
+                         <div class="aside">
+                              <h3 class="aside-title">Top selling</h3>
+                              <div class="product-widget">
+                                   <div class="product-img">
+                                        <img src="~/img/product01.png" alt="">
+                                   </div>
+                                   <div class="product-body">
+                                        <p class="product-category">Category</p>
+                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                   </div>
+                              </div>
+
+                              <div class="product-widget">
+                                   <div class="product-img">
+                                        <img src="~/img/product02.png" alt="">
+                                   </div>
+                                   <div class="product-body">
+                                        <p class="product-category">Category</p>
+                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                   </div>
+                              </div>
+
+                              <div class="product-widget">
+                                   <div class="product-img">
+                                        <img src="~/img/product03.png" alt="">
+                                   </div>
+                                   <div class="product-body">
+                                        <p class="product-category">Category</p>
+                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- /aside Widget -->
+                    </div>
+                    <!-- /ASIDE -->
+                    <!-- STORE -->
+                    <div id="store" class="col-md-9">
+                         <!-- store top filter -->
+                         <div class="store-filter clearfix">
+                              <div class="store-sort">
+                                   <label>
+                                        Sort By:
+                                        <select class="input-select">
+                                             <option value="0">Popular</option>
+                                             <option value="1">Position</option>
+                                        </select>
+                                   </label>
+
+                                   <label>
+                                        Show:
+                                        <select class="input-select">
+                                             <option value="0">20</option>
+                                             <option value="1">50</option>
+                                        </select>
+                                   </label>
+                              </div>
+                              <ul class="store-grid">
+                                   <li class="active"><i class="fa fa-th"></i></li>
+                                   <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+                              </ul>
+                         </div>
+                         <!-- /store top filter -->
+                         <!-- store products -->
+                         <div class="row">
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb1.png" alt="">
+                                             <div class="product-label">
+                                             </div>
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placa de baza Gigabyte B450 AORUS ELITE V2, Socket AM4</a></h3>
+                                             <h4 class="product-price">$25.75 <del class="product-old-price">$33.50</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn">
+                                                  <i class="fa fa-shopping-cart"></i> @Html.ActionLink("add to card", "checkout")
+
+
+
+                                             </button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb2.png" alt="">
+                                             <div class="product-label">
+                                                  <span class="new">NEW</span>
+                                             </div>
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placa de baza ASUS PRIME B560M-A, Socket 1200</a></h3>
+                                             <h4 class="product-price">$29.15 <del class="product-old-price">$39.49</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star-o"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb3.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placa de baza Gigabyte Z790 UD AX DDR5, Socket LGA 1700</a></h3>
+                                             <h4 class="product-price">$66.97 <del class="product-old-price">$70.87</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-lg visible-md"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb4.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placa de baza GIGABYTE Z790 GAMING X AX</a></h3>
+                                             <h4 class="product-price">$61.36 <del class="product-old-price">$77.64</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb5.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placă de bază ASRock B650 LIVEMIXER</a></h3>
+                                             <h4 class="product-price">$220.35 <del class="product-old-price">$297.45</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb6.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placă de bază ASRock B650E PG RIPTIDE WIFI</a></h3>
+                                             <h4 class="product-price">$146.60 <del class="product-old-price">$185.90</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star-o"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb7.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#"> Placă de bază Asus PRIME H610M-D D4</a></h3>
+                                             <h4 class="product-price">$85.94 <del class="product-old-price">$106.53</del></h4>
+                                             <div class="product-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb8.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placă de bază ASUS ROG STRIX B550-F</a></h3>
+                                             <h4 class="product-price">$151.36 <del class="product-old-price">$182.64</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+
+                              <div class="clearfix visible-sm visible-xs"></div>
+
+                              <!-- product -->
+                              <div class="col-md-4 col-xs-6">
+                                   <div class="product">
+                                        <div class="product-img">
+                                             <img src="~/img/pb9.png" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                             <p class="product-category">Category</p>
+                                             <h3 class="product-name"><a href="#">Placă de bază Gigabyte B650E AORUS MASTER</a></h3>
+                                             <h4 class="product-price">$156.68 <del class="product-old-price">$181.22</del></h4>
+                                             <div class="product-rating">
+                                             </div>
+                                             <div class="product-btns">
+                                                  <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                  <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                  <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                             </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        </div>
+                                   </div>
+                              </div>
+                              <!-- /product -->
+                         </div>
+                         <!-- /store products -->
+                    </div>
+                    <!-- /STORE -->
+               </div>
+               <!-- /row -->
+          </div>
+          <!-- /container -->
+     </div>
+     <!-- /SECTION -->
+     <!-- NEWSLETTER -->
+     <div id="newsletter" class="section">
+          <!-- container -->
+          <div class="container">
+               <!-- row -->
+               <div class="row">
+                    <div class="col-md-12">
+                         <div class="newsletter">
+                              <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+                              <form>
+                                   <input class="input" type="email" placeholder="Enter Your Email">
+                                   <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                              </form>
+                              <ul class="newsletter-follow">
+                                   <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                   </li>
+                                   <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                   </li>
+                                   <li>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                   </li>
+                                   <li>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <!-- /row -->
+          </div>
+          <!-- /container -->
+     </div>
+     <!-- /NEWSLETTER -->
+</div>
