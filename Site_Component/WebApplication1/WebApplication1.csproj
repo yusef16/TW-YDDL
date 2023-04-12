@@ -135,6 +135,15 @@
     <Content Include="img\hd1.png" />
     <Content Include="img\hotdeal.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\pb1.png" />
+    <Content Include="img\pb2.png" />
+    <Content Include="img\pb3.png" />
+    <Content Include="img\pb4.png" />
+    <Content Include="img\pb5.png" />
+    <Content Include="img\pb6.png" />
+    <Content Include="img\pb7.png" />
+    <Content Include="img\pb8.png" />
+    <Content Include="img\pb9.png" />
     <Content Include="img\product01.png" />
     <Content Include="img\product02.png" />
     <Content Include="img\product03.png" />
@@ -239,6 +248,7 @@
     <Content Include="Views\Default\CPU.cshtml" />
     <Content Include="Views\Default\Video_card.cshtml" />
     <Content Include="Views\Default\Categorii.cshtml" />
+    <Content Include="Views\Default\Placidebaza.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

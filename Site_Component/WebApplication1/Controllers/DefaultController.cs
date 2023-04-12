@@ -59,6 +59,9 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-
+        public ActionResult Placidebaza()
+        {
+            return View();
+        }
     }
 }
