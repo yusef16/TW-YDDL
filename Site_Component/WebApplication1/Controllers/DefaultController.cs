@@ -30,11 +30,15 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public ActionResult login()
+        public ActionResult LoginPage()
         {
-               return View();
+            return View();
         }
-        public ActionResult hard()
+        public ActionResult RegisterPage()
+        {
+            return View();
+        }
+          public ActionResult hard()
         {
                return View();
         }

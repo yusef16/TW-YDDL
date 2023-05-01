@@ -242,13 +242,14 @@
     <Content Include="Views\Default\checkout.cshtml" />
     <Content Include="Views\Default\product.cshtml" />
     <Content Include="Views\Default\store.cshtml" />
-    <Content Include="Views\Default\login.cshtml" />
     <Content Include="Views\Default\hard.cshtml" />
     <Content Include="Views\Default\RAM.cshtml" />
     <Content Include="Views\Default\CPU.cshtml" />
     <Content Include="Views\Default\Video_card.cshtml" />
     <Content Include="Views\Default\Categorii.cshtml" />
     <Content Include="Views\Default\Placidebaza.cshtml" />
+    <Content Include="Views\Default\RegisterPage.cshtml" />
+    <Content Include="Views\Default\LoginPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,13 +1,12 @@
-﻿
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
-.container101{
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+.container101 {
      font-family: 'Poppins', sans-serif;
      font-weight: 300;
      font-size: 40px;
      line-height: 1.7;
      color: #c4c3ca;
      overflow-x: hidden;
-
 }
 
 .input-icon {
@@ -148,13 +147,7 @@ h6 span {
      backface-visibility: hidden;
 }
 
-.card-back {
-     transform: rotateY(180deg);
-}
 
-.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
-     transform: rotateY(180deg);
-}
 
 .center-wrap {
      position: absolute;
