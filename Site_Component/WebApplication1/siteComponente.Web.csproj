@@ -198,6 +198,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,6 +261,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\siteComponente.BusinessLogic\siteComponente.BusinessLogic.csproj">
+      <Project>{f814660d-822e-4514-838e-4a56ed1db631}</Project>
+      <Name>siteComponente.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\siteComponente.Domain\siteComponente.Domain.csproj">
+      <Project>{76773b06-f4d6-4985-b826-de74cc41f865}</Project>
+      <Name>siteComponente.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
