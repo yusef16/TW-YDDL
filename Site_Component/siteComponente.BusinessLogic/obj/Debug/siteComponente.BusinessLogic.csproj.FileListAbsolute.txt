@@ -1,0 +1,2 @@
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.BusinessLogic\obj\Debug\siteComponente.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.BusinessLogic\obj\Debug\siteComponente.BusinessLogic.csproj.CoreCompileInputs.cache

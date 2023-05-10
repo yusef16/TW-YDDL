@@ -1,0 +1,9 @@
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\bin\Debug\siteComponente.Domain.dll
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\bin\Debug\siteComponente.Domain.pdb
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\bin\Debug\siteComponente.Helpers.dll
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\bin\Debug\siteComponente.Helpers.pdb
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\obj\Debug\siteComponente.Domain.csproj.AssemblyReference.cache
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\obj\Debug\siteComponente.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\obj\Debug\siteComponente.Domain.csproj.CopyComplete
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\obj\Debug\siteComponente.Domain.dll
+C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Domain\obj\Debug\siteComponente.Domain.pdb

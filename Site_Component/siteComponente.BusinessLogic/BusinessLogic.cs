@@ -1,5 +1,4 @@
-﻿using siteComponente.BusinessLogic.Interfaces;
-using siteComponente.BusinessLogic;
+﻿using siteComponente.BussinessLogic.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
