@@ -1,8 +1,16 @@
-﻿using System;
+﻿using AutoCar.Helpers;
+using siteComponente.Domain.Entities.Response;
+using siteComponente.Domain.Entities.User;
+using siteComponente.Domain.Entities;
+using siteComponente.Helpers;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
+using System.Data.Entity;
 
 namespace siteComponente.BussinessLogic.Core
 {

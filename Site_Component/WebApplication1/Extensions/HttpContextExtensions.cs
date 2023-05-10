@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace siteComponente.web.Extensions
+namespace siteComponente.Web.Extensions
 {
      public static class HttpContextExtensions
      {
