@@ -1,0 +1,63 @@
+﻿@model List<siteComponente.Domain.Entities.User.User>
+@using siteComponente.Web.Extensions
+
+@{
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<section id="breadcrumbs" class="breadcrumbs" style="margin-top: 60px">
+     <div class="container text-register">
+          <div class="d-flex justify-content-between align-items-center">
+               <h2 class="d-flex justify-content-between align-items-center">Users</h2>
+          </div>
+
+     </div>
+</section>
+
+<section class="text-register">
+     <section class="container text-register" style="margin-left: 290px; margin-top: -90px">
+          <table border="1" cellspacing="0" style="border-color: #026773" class="col-md-8">
+               <tr>
+                    <th>
+                         @Html.DisplayNameFor(model => model[0].Username)
+                    </th>
+                    <th>
+                         @Html.DisplayNameFor(model => model[0].Email)
+                    </th>
+                    <th>
+                         @Html.DisplayNameFor(model => model[0].AccessLevel)
+                    </th>
+                    <th>
+                         @Html.DisplayName("Function")
+                    </th>
+               </tr>
+
+               @foreach (var item in Model)
+               {
+                    <tr>
+                         <td>
+                              @Html.DisplayFor(modelItem => item.Username)
+                         </td>
+                         <td>
+                              @Html.DisplayFor(modelItem => item.Email)
+                         </td>
+                         <td>
+                              @Html.DisplayFor(modelItem => item.AccessLevel)
+                         </td>
+                         @if (System.Web.HttpContext.Current.GetMySessionObject().AccessLevel == siteComponente.Domain.Enum.URole.ADMINISTRATOR)
+                         {
+                              <td>
+
+                                   @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                   @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+
+                              </td>
+                         }
+                    </tr>
+               }
+
+          </table>
+
+     </section>
+
+</section>

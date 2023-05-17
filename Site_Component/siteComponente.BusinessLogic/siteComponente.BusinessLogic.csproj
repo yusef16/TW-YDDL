@@ -53,6 +53,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic.cs" />
+    <Compile Include="CategoryBL.cs" />
+    <Compile Include="Core\CategoryApi.cs" />
+    <Compile Include="DBModel\CategoriesContext.cs" />
+    <Compile Include="Interfaces\ICategory.cs" />
+    <Compile Include="ProductBL.cs" />
+    <Compile Include="Core\ProductApi.cs" />
+    <Compile Include="DBModel\ProductsContext.cs" />
+    <Compile Include="Interfaces\IProduct.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
+    <Compile Include="UserBL.cs" />
+    <Compile Include="Core\SessionApi.cs" />
+    <Compile Include="DBModel\SessionContext.cs" />
+    <Compile Include="DBModel\UserContext.cs" />
     <Compile Include="SessionsBL.cs" />
     <Compile Include="Core\UserApi.cs" />
     <Compile Include="Interfaces\ISession.cs" />
@@ -71,6 +84,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBModel\Seed\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

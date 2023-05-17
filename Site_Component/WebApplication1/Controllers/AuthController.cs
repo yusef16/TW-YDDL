@@ -1,16 +1,15 @@
 ﻿using siteComponente.BussinessLogic.Interfaces;
-using siteComponente.BussinessLogic;
 using siteComponente.Domain.Entities.User;
+using siteComponente.Web.ActionAtributes;
 using siteComponente.Web.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using static siteComponente.BussinessLogic.Core.SessionApi;
 
 namespace siteComponente.Web.Controllers
 {
-     public class AuthController : Controller
+     public class AuthController : BaseController
      {
           private readonly ISession _session;
 
@@ -32,7 +31,7 @@ namespace siteComponente.Web.Controllers
           {
                if (ModelState.IsValid)
                {
-                    URegisterData uRegister = new URegisterData
+                    RegisterData uRegister = new RegisterData
                     {
                          Username = data.Username,
                          Password = data.Password,
@@ -42,7 +41,7 @@ namespace siteComponente.Web.Controllers
                     var response = _session.ValidateUserRegister(uRegister);
                     if (response.Status)
                     {
-                         return RedirectToAction("Index", "Home");
+                         return RedirectToAction("LoginPage");
                     }
                     else
                     {
@@ -64,41 +63,58 @@ namespace siteComponente.Web.Controllers
           {
                if (ModelState.IsValid)
                {
-                    ULoginData uLogin = new ULoginData
+                    LoginData uLogin = new LoginData
                     {
                          Username = data.Username,
                          Password = data.Password,
-                         LoginDateTime = DateTime.Now,
+                         Time = DateTime.Now,
                     };
 
                     var response = _session.ValidateUserCredential(uLogin);
+                    SessionStatus();
                     if (response.Status)
                     {
                          var cookieResponse = _session.GenCookie(data.Username);
                          if (cookieResponse != null)
                          {
                               ControllerContext.HttpContext.Response.Cookies.Add(cookieResponse.Cookie);
-                              return RedirectToAction("Index", "Home");
+
+                              return RedirectToAction("Index", "Default");
                          }
                          else
                          {
                               throw new Exception();
                          }
+
                     }
                     else
                     {
                          ViewBag.Error = "Invalid username or password.";
                          ModelState.AddModelError("Invalid username or password.", response.StatusMessage);
+                         ViewData["LoginFlag"] = "Invalid Username or Password!";
                          return View();
                     }
                }
                return View();
           }
 
-          [HttpGet]
-          public ActionResult Login()
+          [AuthorizedMod]
+          public ActionResult Logout()
           {
-               return View(new LoginForm());
+               System.Web.HttpContext.Current.Session.Clear();
+               if (ControllerContext.HttpContext.Request.Cookies.AllKeys.Contains("X-KEY"))
+               {
+                    var cookie = ControllerContext.HttpContext.Request.Cookies["X-KEY"];
+                    if (cookie != null)
+                    {
+                         cookie.Expires = DateTime.Now.AddDays(-1);
+                         ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+                    }
+               }
+
+               System.Web.HttpContext.Current.Session["LoginStatus"] = "logout";
+
+               return RedirectToAction("Index", "Default");
           }
 
      }

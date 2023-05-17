@@ -1,0 +1,76 @@
+﻿@model siteComponente.Web.Models.RegisterForm
+
+@{
+     ViewBag.Title = "RegisterPage";
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<link href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" rel="stylesheet" />
+<div id="darklight" class="section">
+     <!-- SECTION -->
+     <div class="section">
+          <!-- container -->
+          <div class="container">
+               <!-- row -->
+               <div class="row">
+               </div>
+               <!-- /row -->
+          </div>
+          <!-- /container -->
+     </div>
+     <!-- /SECTION -->
+
+     <section style="margin-bottom: 30px">
+
+          @using (Html.BeginForm())
+          {
+               @Html.AntiForgeryToken()
+
+               <div class="form-horizontal; container" style="margin-left: 450px">
+                    <h4 style="margin-left: 105px">Register</h4>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                         @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label" })
+                         <div>
+                              @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", style = "width: 30%" } })
+                              @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                         @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label" })
+                         <div>
+                              @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", style = "width: 30%" } })
+                              @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                         @Html.LabelFor(model => model.confirmPassword, htmlAttributes: new { @class = "control-label" })
+                         <div>
+                              @Html.EditorFor(model => model.confirmPassword, new { htmlAttributes = new { @class = "form-control", style = "width: 30%" } })
+                              @Html.ValidationMessageFor(model => model.confirmPassword, "", new { @class = "text-danger" })
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                         @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                         <div>
+                              @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", style = "width: 30%" } })
+                              @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                         <div>
+                              <input type="submit" value="                             Register                             " class="btn btn-dark" style="margin-top: 20px; width: 30%" />
+                         </div>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 10px">
+                         <p>Have already an account? <a href="@Url.Action("LoginPage")" class="fw-bold text-register"><u>Login here</u></a></p>
+                    </div>
+               </div>
+          }
+
+     </section>
+</div>

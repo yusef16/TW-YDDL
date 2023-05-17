@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static siteComponente.BussinessLogic.Core.SessionApi;
 
 namespace siteComponente.BussinessLogic.Interfaces
 {
      public interface ISession
      {
-          ServiceResponse ValidateUserCredential(ULoginData user);
-          ServiceResponse ValidateNewPassword(UChangePasswordData password);
-          ServiceResponse ValidateUserRegister(URegisterData newUuser);
+          ServiceResponse ValidateUserCredential(LoginData user);
+          ServiceResponse ValidateUserRegister(RegisterData newUuser);
           CookieResponse GenCookie(string username);
-          UserMinimal GetUserByCookie(string value);
+          User GetUserByCookie(string value);
 
      }
 }
