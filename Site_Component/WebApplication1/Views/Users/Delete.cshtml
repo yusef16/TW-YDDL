@@ -1,0 +1,55 @@
+﻿@model siteComponente.Domain.Entities.User.User
+
+@{
+     ViewBag.Title = "Delete";
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<body>
+     <section style="margin-top: 45px; color:red">
+          <h2 style="text-align: center; font-family: cursive; font-size: 70px">ATTENTION!</h2>
+          <section class="container text-register" style="text-align: center">
+               <h3>Are you sure you want to delete this?</h3>
+               <div>
+                    <dl class="dl-horizontal">
+                         <dt>
+                              @Html.DisplayNameFor(model => model.Username)
+                         </dt>
+
+                         <dd>
+                              @Html.DisplayFor(model => model.Username)
+                         </dd>
+
+                         <dt>
+                              @Html.DisplayNameFor(model => model.Email)
+                         </dt>
+
+                         <dd>
+                              @Html.DisplayFor(model => model.Email)
+                         </dd>
+
+                         <dt>
+
+                         <dt>
+                              @Html.DisplayNameFor(model => model.AccessLevel)
+                         </dt>
+
+                         <dd>
+                              @Html.DisplayFor(model => model.AccessLevel)
+                         </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                         @Html.AntiForgeryToken()
+
+                         <div class="form-actions no-color">
+                              <input type="submit" value="Delete" class="btn btn-default text-register" /> |
+                              @Html.ActionLink("Back to List", "Index")
+                         </div>
+                    }
+               </div>
+          </section>
+     </section>
+</body>

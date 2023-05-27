@@ -4,3 +4,9 @@ C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Helpers\
 C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.csproj.CoreCompileInputs.cache
 C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.dll
 C:\Users\Denis\Desktop\Project_TW\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.pdb
+D:\TW-YDDL\Site_Component\siteComponente.Helpers\bin\Debug\siteComponente.Helpers.dll
+D:\TW-YDDL\Site_Component\siteComponente.Helpers\bin\Debug\siteComponente.Helpers.pdb
+D:\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.csproj.AssemblyReference.cache
+D:\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.csproj.CoreCompileInputs.cache
+D:\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.dll
+D:\TW-YDDL\Site_Component\siteComponente.Helpers\obj\Debug\siteComponente.Helpers.pdb

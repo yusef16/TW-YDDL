@@ -1,0 +1,66 @@
+﻿@model IEnumerable<siteComponente.Domain.Entities.Products.Product>
+@using siteComponente.Web.Extensions
+
+@{
+     var user = System.Web.HttpContext.Current.GetMySessionObject();
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<section id="breadcrumbs" class="breadcrumbs" style="margin-top: 69px">
+     <div class="container text-register">
+          <div class="d-flex justify-content-between align-items-center">
+               <h2 class="page-title">Shop</h2>
+          </div>
+
+     </div>
+</section>
+         
+<section>
+     <div class="container text-register" data-aos="fade-up" style="margin-top: -50px">
+          @if ((user != null) && (user.AccessLevel == siteComponente.Domain.Enum.URole.ADMINISTRATOR))
+          {
+               <h4 style="text-align: right">
+
+                    @Html.ActionLink("Add Product", "CreatePage")
+
+               </h4>
+          }
+          <div class="row">
+               @foreach (var item in Model)
+               {
+                    <div class="col-md-3">
+                         <div class="item" style="border: 100px">
+                              <img style="width: 300px; height: 300px; object-fit: cover; border-radius: 20px; border: 1px solid #ddd; border-radius: 4px; padding: 7px" src="@Html.DisplayFor(modelItem => item.Thumbnail)" />
+                              <h2 class="lead">@Html.DisplayFor(modelItem => item.Name)</h2>
+                              <h7>#@Html.DisplayFor(modelItem => item.Id) &emsp;&emsp;&emsp;&emsp;&emsp; Available: @Html.DisplayFor(modelItem => item.Amount)</h7>
+                              <p>@Html.DisplayFor(modelItem => item.Price)</p>
+                              @if ((user != null) && (user.AccessLevel == siteComponente.Domain.Enum.URole.ADMINISTRATOR))
+                              {
+                                   <p>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                   </p>
+                              }
+                              @if ((string)System.Web.HttpContext.Current.Session["LoginStatus"] == "login")
+                              {
+                                   <p>
+                                        <td>
+                                             @using (Html.BeginForm("AddToCart", "Carts", new { productId = item.Id, userId = user.Id }, FormMethod.Post))
+                                             {
+                                                  @Html.AntiForgeryToken()
+                                                  <button type="submit" class="btn-link">Add to Cart</button>
+                                             }
+                                        </td>
+                                   </p>
+                              }
+                         </div>
+                    </div>
+               }
+          </div>
+
+     </div>
+</section>
+

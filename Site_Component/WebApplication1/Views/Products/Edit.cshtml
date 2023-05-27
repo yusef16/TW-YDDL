@@ -1,0 +1,66 @@
+﻿@model siteComponente.Domain.Entities.Products.Product
+
+@{
+     ViewBag.Title = "Edit";
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<section class="text-register">
+     <section class="container">
+          @using (Html.BeginForm())
+          {
+               @Html.AntiForgeryToken()
+
+          <div class="form-horizontal">
+               <h4>Product</h4>
+               <div class="form-group">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
+                    <div>
+                         @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                         @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+               </div>
+               <div class="form-group">
+                    @Html.LabelFor(model => model.CategoryID, htmlAttributes: new { @class = "control-label" })
+                    <div>
+                         @Html.EditorFor(model => model.CategoryID, new { htmlAttributes = new { @class = "form-control" } })
+                         @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                    </div>
+               </div>
+               <div class="form-group">
+                    @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label" })
+                    <div>
+                         @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                         @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+                    </div>
+               </div>
+
+               <div class="form-group">
+                    @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label" })
+                    <div>
+                         @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })
+                         @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+                    </div>
+               </div>
+
+               <div class="form-group">
+                    @Html.LabelFor(model => model.Thumbnail, htmlAttributes: new { @class = "control-label" })
+                    <div>
+                         @Html.EditorFor(model => model.Thumbnail, new { htmlAttributes = new { @class = "form-control" } })
+                         @Html.ValidationMessageFor(model => model.Thumbnail, "", new { @class = "text-danger" })
+                    </div>
+               </div>
+
+                    <div class="form-group">
+                         <div>
+                              <input type="submit" value="Save" class="btn btn-default text-register" />
+                         </div>
+                    </div>
+               </div>
+          }
+
+          <div>
+               @Html.ActionLink("Back to List", "Index")
+          </div>
+     </section>
+</section>

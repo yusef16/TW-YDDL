@@ -1,0 +1,54 @@
+﻿@model siteComponente.Domain.Entities.User.User
+@using siteComponente.Web.Extensions
+
+@{
+     ViewBag.Title = "Profile";
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+     <section id="breadcrumbs" class="breadcrumbs" style="margin-top: 60px">
+          <div class="container text-register">
+               <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="page-title">Profile</h2>
+               </div>
+
+          </div>
+     </section>
+     <section>
+          <div class="container text-register">
+               <section>
+                    <table>
+                         <tr>
+                              <th> Info </th>
+                              <th>    Value </th>
+                         </tr>
+                         <tr>
+                              <td> @Html.DisplayNameFor(model => model.Username)</td>
+                              <td> |@Html.DisplayFor(model => model.Username)</td>
+                         </tr>
+                         <tr>
+                              <td>  @Html.DisplayNameFor(model => model.Email)</td>
+                              <td> |@Html.DisplayFor(model => model.Email)</td>
+                         </tr>
+                         <tr>
+                              <td> @Html.DisplayNameFor(model => model.AccessLevel)</td>
+                              <td> |@Html.DisplayFor(model => model.AccessLevel)</td>
+                         </tr>
+                    </table>
+
+
+                    <p>
+                    <p>
+                    </p>
+                    
+                    </p>
+               </section>
+          </div>
+     </section>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<siteComponente.Domain.Entities.Categories.Category>
+@using siteComponente.Web.Extensions
+
+@{
+     var user = System.Web.HttpContext.Current.GetMySessionObject();
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div id="darklight" class="section">
+
+     <section>
+          <div class="container text-register" data-aos="fade-up" style="margin-top: -50px">
+               @if ((user != null) && (user.AccessLevel == siteComponente.Domain.Enum.URole.ADMINISTRATOR))
+               {
+                    <h4 style="text-align: right">
+                         @Html.ActionLink("Add Category", "CreatePage")
+                    </h4>
+               }
+          </div>
+          <div class="container text-register" data-aos="fade-up" style="margin-top: -50px">
+               <div class="row">
+                    <div class="col-md-12">
+                         <h2 class="section-title">Categories</h2>
+                    </div>
+               </div>
+               <div class="row">
+                    @foreach (var item in Model)
+                    {
+                         <div class="col-md-3">
+                              <div class="item" style="border: 1px solid #ddd; border-radius: 4px; padding: 7px; margin-bottom: 20px;">
+                                   <div class="image-container" style="width: 100%; height: 200px; overflow: hidden;">
+                                        <img style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; border: 1px solid #ddd; padding: 7px" src="@Html.DisplayFor(modelItem => item.Thumbnail)" />
+                                   </div>
+                                   <h3 class="category-name"><a href="@Url.Action("CategoryProducts", "Categories", new { id = item.Id })">@Html.DisplayFor(modelItem => item.Name)</a></h3>
+                                   <h7 class="category-id">#@Html.DisplayFor(modelItem => item.Id)</h7>
+                                   @if ((user != null) && (user.AccessLevel == siteComponente.Domain.Enum.URole.ADMINISTRATOR))
+                                   {
+                                        <p>
+                                             @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                             @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                        </p>
+                                   }
+                              </div>
+                         </div>
+                    }
+               </div>
+          </div>
+     </section>
+</div>
+
+

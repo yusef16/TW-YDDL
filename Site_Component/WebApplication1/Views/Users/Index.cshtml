@@ -1,0 +1,40 @@
+﻿@model List<siteComponente.Domain.Entities.User.User>
+@using siteComponente.Web.Extensions
+
+@{
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<div id="darklight" class="section">
+
+     <section class="text-register">
+          <div class="container" style="margin-left: 290px; margin-top: -90px">
+               <table class="table table-striped table-bordered">
+                    <thead>
+                         <tr>
+                              <th>Username</th>
+                              <th>Email</th>
+                              <th>Access Level</th>
+                              <th>Function</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         @foreach (var item in Model)
+                         {
+                              <tr>
+                                   <td>@Html.DisplayFor(modelItem => item.Username)</td>
+                                   <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                                   <td>@Html.DisplayFor(modelItem => item.AccessLevel)</td>
+                                   @if (System.Web.HttpContext.Current.GetMySessionObject().AccessLevel == siteComponente.Domain.Enum.URole.ADMINISTRATOR)
+                                   {
+                                        <td>
+                                             <a href="@Url.Action("Edit", new { id = item.Id })">Edit</a> |
+                                             <a href="@Url.Action("Delete", new { id = item.Id })">Delete</a>
+                                        </td>
+                                   }
+                              </tr>
+                         }
+                    </tbody>
+               </table>
+          </div>
+     </section>
+</div>

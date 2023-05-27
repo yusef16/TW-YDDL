@@ -43,15 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Carts\Cart.cs" />
+    <Compile Include="Entities\Categories\Category.cs" />
+    <Compile Include="Entities\Products\Product.cs" />
     <Compile Include="Entities\Response\CookieResponse.cs" />
     <Compile Include="Entities\Response\ServiceResponse.cs" />
     <Compile Include="Entities\Session\SDbModel.cs" />
-    <Compile Include="Entities\User\UChangePassword.cs" />
-    <Compile Include="Entities\User\UCookieData.cs" />
-    <Compile Include="Entities\User\UDbModel.cs" />
-    <Compile Include="Entities\User\ULoginData.cs" />
-    <Compile Include="Entities\User\URegisterData.cs" />
-    <Compile Include="Entities\User\UserMinimal.cs" />
+    <Compile Include="Entities\User\User.cs" />
     <Compile Include="Enum\URole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

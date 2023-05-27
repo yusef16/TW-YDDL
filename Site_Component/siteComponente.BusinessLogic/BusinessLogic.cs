@@ -1,9 +1,4 @@
 ﻿using siteComponente.BussinessLogic.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace siteComponente.BussinessLogic
 {
@@ -12,6 +7,22 @@ namespace siteComponente.BussinessLogic
           public ISession GetSessionBL()
           {
                return new SessionBL();
+          }
+          public ICategory GetCategoryBL()
+          {
+               return new CategoryBL();
+          }
+          public IProduct GetProductBL()
+          {
+               return new ProductBL();
+          }
+          public IUser GetUsertBL()
+          {
+               return new UserBL();
+          }
+          public ICart GetCartBL()
+          {
+               return new CartBL();
           }
      }
 }

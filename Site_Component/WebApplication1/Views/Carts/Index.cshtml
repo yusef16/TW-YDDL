@@ -1,0 +1,52 @@
+﻿@model IEnumerable<siteComponente.Domain.Entities.Carts.Cart>
+@using siteComponente.Web.Extensions
+
+@{
+     var user = System.Web.HttpContext.Current.GetMySessionObject();
+     Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<section id="breadcrumbs" class="breadcrumbs" style="margin-top: 69px">
+     <div class="container text-register">
+          <div class="d-flex justify-content-between align-items-center">
+               <h2 class="page-title">Shopping Cart</h2>
+          </div>
+
+     </div>
+</section>
+
+
+<div class="container">
+     <div class="row justify-content-center">
+          <div class="col-md-8">
+               <ul class="list-group">
+                    @foreach (var item in Model)
+                    {
+                         <li class="list-group-item">
+                              <div class="row align-items-center">
+                                   <div class="col-2 col-md-1 col-lg-1 col-xl-1 text-center">
+                                        <img src="@Html.DisplayFor(modelItem => item.Product.Thumbnail)" class="img-fluid rounded-circle mx-auto d-block" alt="Product Thumbnail" style="max-width: 50px;">
+                                   </div>
+                                   <div class="col-md-4 col-lg-4 col-xl-4">
+                                        <h5 class="mb-0">@Html.DisplayFor(modelItem => item.Product.Name)</h5>
+                                        <p>Quantity: @Html.DisplayFor(modelItem => item.Quantity)</p>
+                                        <p>Price: $@Html.DisplayFor(modelItem => item.Product.Price)</p>
+                                   </div>
+                                   <div class="col-md-2 col-lg-2 col-xl-2 text-end">
+                                        @using (Html.BeginForm("DeleteFromCart", "Carts", new { productId = item.Product.Id, userId = user.Id }, FormMethod.Post))
+                                        {
+                                             @Html.AntiForgeryToken()
+                                             <button type="submit" class="btn btn-link btn-icon">
+                                                  <i class="fas fa-trash"></i>
+                                             </button>
+                                        }
+                                   </div>
+                              </div>
+                         </li>
+                    }
+               </ul>
+          </div>
+     </div>
+</div>
